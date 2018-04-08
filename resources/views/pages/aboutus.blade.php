@@ -81,6 +81,15 @@
         <div class="title m-b-md">
             About Us
         </div>
+        <div class="dark">
+            <figure>
+                <img src="/images/dead pool.jpg" alt="dead pool">
+                <figcaption>We want you to spend time doing what you love</figcaption>
+            </figure>
+            <p style="text-align: left; padding-left: 20%; padding-right: 20%; padding-top: 10px;">
+                We want you to spend your time the way you want. Sign-up for as many movies as you like with the swipe of a finger. When a potential match has expressed mutual interest in the same movie, only then should you invest a large amount of time. We will help you find find and match with as many people in the easiest and fastest way possible.
+            </p>
+        </div>
 
         <div class="links">
             <a href="mailto:admin@swiperighttoapply.com?subject=swipe right to apply, help">Email</a>
