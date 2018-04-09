@@ -5,7 +5,7 @@
 @stop
 
 @section('header')
-    7-Eleven
+    {{ $companyName }}
 @stop
 
 @section('data')
