@@ -5,7 +5,7 @@
 @stop
 
 @section ('header')
-    SwipeRightToApply: Create Your Profile
+    <h1>SwipeRightToApply: Create Your Profile</h1>
 @stop
 
 @section ('css')
@@ -47,6 +47,21 @@
     height: 20px;
     margin-bottom: 2px;
     }
+
+    input[type=password] {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    }
 @stop
 
 @section ('data')
@@ -66,6 +81,9 @@
             {!! Form::label('email', 'Email Address:') !!}
             {!! Form::email('email', null, ['class'=>'form-control']) !!}
 
+            {!! Form::label('password', 'Password:') !!}
+            {!! Form::password('password', null, ['']) !!}
+
             {!! Form::label('linkedinurl', 'LinkedIn URL:') !!}
             {!! Form::text('linkedinurl', null, ['class'=>'form-control']) !!}
 
@@ -75,8 +93,8 @@
             {!! Form::label('extension', 'Extension:') !!}
             {!! Form::text('extension', null, ['class'=>'form-control']) !!}
 
-            <div id="locationField">
-                <input id="autocomplete" placeholder="Enter your address"
+            <div id="locationField" class="my-4">
+                <input id="autocomplete" placeholder="Enter your address" class="form-control"
                        onFocus="geolocate()" type="text">
             </div>
 
@@ -177,20 +195,8 @@
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgtBPaE9dibaROaiawYcekiYai6tWdQcE&libraries=places&callback=initAutocomplete"
                     async defer></script>
 
-            {!! Form::submit('Create Profile', ['class'=>'btn btn-primary form-control']) !!}
+            {!! Form::submit('Create Profile', ['class'=>'btn btn-primary form-control mt-4']) !!}
         </div>
         {!! Form::close() !!}
     </div>
-
-    <div class="links">
-        <a href="/=mailto:admin@swiperighttoapply.com?subject=swipe right to apply, help">Email</a>
-        <a href="https://twitter.com/SwipeRightToApply">Twitter</a>
-        <a href="https://facebook.com/SwipeRightToApply">Facebook</a>
-        <a href="https://developer.apple.com/app-store/">iOS app</a>
-    </div>
-@stop
-
-@section ('footer')
-    <hr>
-    Thank you for using SwipeRightToApply
 @stop

@@ -5,7 +5,9 @@
 @stop
 
 @section('header')
-    About Us
+    <h1>About Us</h1>
+    <hr>
+    <h3>Create job posts in seconds | Apply for jobs with a swipe</h3>
 @stop
 
 @section('data')

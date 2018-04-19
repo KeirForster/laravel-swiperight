@@ -52,7 +52,7 @@ class UsersController extends Controller
         $user->workphoneextension = Request::get('extension');
         $user->mobilephone = Request::get('phone');
         
-        $user->password = '1234';
+        $user->password = Request::get('password');
         
         $user->save();
         
