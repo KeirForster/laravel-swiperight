@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('linkedinurl');
             $table->string('streetaddress');
             $table->string('city');
-            $table->string('stateid');
+            $table->string('state');
             $table->string('countryid');
             $table->string('postalzipcode');
             $table->string('workphone');

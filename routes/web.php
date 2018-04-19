@@ -23,9 +23,15 @@ Route::get('contact', 'PagesController@contact');
 
 Route::get('about', 'PagesController@about');
 
+Route::get('/geo', 'UsersController@geo')->name('geo');
+
 Route::get('posting/{id}', 'PostingsController@show');
 
 Route::get('users', 'UsersController@index');
+
+Route::post('users', 'UsersController@store')->name('storeuser');
+
+Route::get('users/create', 'UsersController@create')->name('createuser');
 
 Route::get('users/{id}', 'UsersController@show')->name('showuser');
 

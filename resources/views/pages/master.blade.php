@@ -72,6 +72,7 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+        @yield ('css')
     </style>
 </head>
 <body>

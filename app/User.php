@@ -16,7 +16,7 @@
          */
         protected $fillable = [
             'firstname', 'middlename', 'lastname', 'email', 'password', 'linkedinurl', 'streetaddress', 'city',
-            'stateid', 'ocuntryid', 'postalzipcode', 'workphone', 'workphoneextension', 'mobilephone', 'homephone'
+            'state', 'countryid', 'postalzipcode', 'workphone', 'workphoneextension', 'mobilephone', 'homephone'
         ];
         
         
